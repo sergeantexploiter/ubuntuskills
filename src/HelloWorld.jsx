@@ -19,6 +19,13 @@ const HelloWorld = (props) => {
 		}
 	}, [movie, school]);
 
+	useEffect(() => {
+		// Send a request to a movie server and retrieve list
+		if (movie.length > 0) {
+			console.log(`Sending movie (${movie}) to movie server.....`);
+		}
+	}, [movie, school]);
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log("====================================");
