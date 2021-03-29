@@ -1,14 +1,12 @@
 import React from "react";
-import { HelloWorld, HelloWorldParent } from "./HelloWorld";
+import { HelloWorld } from "./HelloWorld";
 
-function App() {
+function Starter() {
 	return (
 		<React.Fragment>
-			<HelloWorld />
-
-			<HelloWorldParent name="Daniel" />
+			<HelloWorld name="Francisca" />
 		</React.Fragment>
 	);
 }
 
-export default App;
+export default Starter;
